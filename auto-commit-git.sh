@@ -1,5 +1,7 @@
 #!/bin/bash
 
-for i in {1..15}; do
-    echo "Dummy-Text-for-Commit_$i"
+NUM_OF_ITERATIONS=15
+
+for ((i = 1; i <= $NUM_OF_ITERATIONS; i++)); do
+    echo "Dummy-Text-for-Commit" >>dummy_file_$i.dat
 done
