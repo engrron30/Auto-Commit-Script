@@ -5,11 +5,12 @@
 GIT_CMD=git
 GIT_USR=engrron30
 GIT_RPO=Auto-Commit-Script
+GIT_BRN=main
 
 echo "# $GIT_RPO" >>README.md
 $GIT_CMD init
 $GIT_CMD add README.md
 $GIT_CMD commit -m "first commit"
-$GIT_CMD branch -M main
+$GIT_CMD branch -M $GIT_BRN
 $GIT_CMD remote add origin git@github.com:$GIT_USR/$GIT_RPO
-$GIT_CMD push -u origin main
+$GIT_CMD push -u origin $GIT_BRN
