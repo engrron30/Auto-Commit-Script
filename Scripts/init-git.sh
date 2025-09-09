@@ -2,7 +2,6 @@
 # This newly created repo must be empty. This script
 # file will initialize your empty repo with a README.md.
 
-Try
 echo "# Auto-Commit-Script" >>README.md
 git init
 git add README.md
