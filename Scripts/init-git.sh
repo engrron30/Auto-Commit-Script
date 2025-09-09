@@ -3,11 +3,13 @@
 # file will initialize your empty repo with a README.md.
 
 GIT_CMD=git
+GIT_USR=engrron30
+GIT_RPO=Auto-Commit-Script
 
-echo "# Auto-Commit-Script" >>README.md
+echo "# $GIT_RPO" >>README.md
 $GIT_CMD init
 $GIT_CMD add README.md
 $GIT_CMD commit -m "first commit"
 $GIT_CMD branch -M main
-$GIT_CMD remote add origin git@github.com:engrron30/Auto-Commit-Script.git
+$GIT_CMD remote add origin git@github.com:$GIT_USR/$GIT_RPO
 $GIT_CMD push -u origin main
